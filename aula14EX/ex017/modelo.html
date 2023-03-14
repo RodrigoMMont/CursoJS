@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css"> <!--um link para chamar o estilo para outra página-->
+</head>
+<body>
+    <header> <!--Criei um header, as configurações de estilo estão na outra página-->
+        <h1>Tabuada</h1>
+    </header>
+
+    <section> <!--Criei uma section, as configurações de estilo estão na outra página-->
+        <div> <!--um divisão-->
+            <p>Número: <input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+        </div>
+
+        <div><!--Outra divisão-->
+            <select name="tabuada" id="seltab" size="10"> <!--cria o selecionador a baixo de numero size é o tamanho-->
+                <option> Digite um número a cima </option> <!--criando opcion em html, mesma coisa q JS-->
+            </select>    
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; RodrigoMonteiro</p> <!--copywhite-->
+    </footer>
+    <script src="script.js"></script> <!--Chamando o script src para outra página-->
+
+</body>
+</html>

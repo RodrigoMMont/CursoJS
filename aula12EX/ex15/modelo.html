@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css"> <!--um link para chamar o estilo para outra página-->
+</head>
+<body>
+    <header> <!--Criei um header, as configurações de estilo estão na outra página-->
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section> <!--Criei uma section, as configurações de estilo estão na outra página-->
+        <div> <!--um divisão-->
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0"> <!--pede o ano de nascimento, min = minimo valor-->
+            </p>
+            <p>
+                Sexo: <!--pedindo o sexo-->
+                <input type="radio" name="radsex" id="mas" checked> <!--input do tipo radio que é o bolinha para marcar, "checked pq ja vai aparecer marcado em masc"-->
+                <label for="masc">Masculino</label> <!--Para das nomes as bolinhas (opcções) Masculino e feminino-->
+                <input type="radio" name="radsex" id="fem"> <!--o nome tem que ser o mesmo do label de cima, se não na hora de marcar ele vai marcar as duas opçôes-->
+                <label for="fem">Feminino</label>
+
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()"> <!--cria o botão de verificar, fez o onclick verificar pq quando clicar no mouse vai disparar um evenrto chamado verificar-->
+            </p>
+        </div>
+
+        <div id="res"><!--Outra divisão-->
+            Preencha os dados acima para ver o resultado!
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; RodrigoMonteiro</p> <!--copywhite-->
+    </footer>
+    <script src="script.js"></script> <!--Chamando o script src para outra página-->
+
+</body>
+</html>

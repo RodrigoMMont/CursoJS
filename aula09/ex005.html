@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primerios passos com DOM</title>
+    <style>
+        body
+        {
+            background: rgb(55, 108, 224);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+        <!--Dei um Id para minha div-->    
+    <script>
+        var corpo = window.document.body //criei variável para mudar coisas do body em JS   
+        var p1 = window.document.getElementsByTagName('p')[0]; //usando o getElements por tag. getElementS no plural eu preciso selecionar qual elemento quero [1]
+        var d = window.document.getElementById('msg')//usando getElementById... por ID
+        d.style.background = 'green' //mudei apenas a cor da div pois dei um ID para ela e mencionei o ID
+        window.document.write('Está escrito assim: ' + p1.innerText); //innerText mostar apenas o texto innerHtml mostra todos os comandos
+        corpo.style.background = 'black' //mudei a cor do fundo usand JS
+        p1.style.color = 'blue' //mudei apenas a cor da parágrafo 1
+        //d.innerText = 'Estou aguardando...' // mudei oque está escrito na div
+        var d = window.document.querySelector('div#msg') //usando querySelector. como a div está ID eu uso #, em todas as outras .
+        d.style.color = 'blue' // cor da letra
+       // d.style.backgroud = 'blue' //se quiser fundo azul
+        /*posso acessar usando por:
+        marca:
+        getElementsByTagName()[]
+        ID:
+        getElementById()
+        nome: 
+        getElementsByName()[]
+        classe:
+        getElementsByClassName()[]
+        seletor:
+        querySelector()
+        querySelectorAll()
+        */
+
+
+
+    </script>
+    
+</body>
+</html>

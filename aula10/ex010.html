@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area
+        {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="area"> <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> Criando as ações e dando nome a elas dentro da div-->
+        Interaja...         <!--desta forma fazendo no html(no JS é emlhor. Aqui fica muito poluido)-->
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area') //para não precisar digitar
+        //dentro de todas as funções, criou fora para ficar com um aspecto global
+        // var a: criaou a variável 'a' para receber document.getElementById do tipo ID 'area' para significar q vai interagir com a div area
+
+        a.addEventListener('click', clicar)         //desta forma em JS, mais simples
+        a.addEventListener('mouseenter', entrar)    //mais limpo, mais fácil
+        a.addEventListener('mouseout', sair)
+        function clicar() // chamando as fuções
+        {
+            //var a = window.document.getElementById('area') // se coloco dentro da function ele só serve apenas para esta function
+            a.innerText = 'Clicou! ' //innerText = escrever o texto
+            a.style.background = 'red' //quando clicar fica vermelho
+        }
+
+        function entrar()
+        {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair()
+        {
+            a.innerText = "Saiu!"
+            a.style.background = 'green' // quando sair volta a ser verde
+        }
+    </script>
+</body>
+</html>

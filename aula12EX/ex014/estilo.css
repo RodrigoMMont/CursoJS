@@ -1,0 +1,33 @@
+body
+{
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+
+}
+
+header
+{
+    text-align: center; /*centralizar testo do header*/
+}
+
+section /*o retangulo*/
+{
+    background: white; /* cor da section (retangulo do testando...*/
+    border-radius: 10px; /* Bordas arrendondadas */
+    padding: 15px; /* espaço dele*/
+    width: 500px; /* largura fixa*/
+    margin: auto; /*centralizado na tela*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.616); /*Sombreamento*/
+}
+
+div
+{
+    text-align: center;
+    padding: 5px;
+}
+
+footer/*rodapé*/
+{
+    text-align: center; /*centralizar texto do rodapé*/
+    font-style: italic; /*estilo da fonte*/
+}

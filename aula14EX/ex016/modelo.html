@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="estilo.css"> <!--um link para chamar o estilo para outra página-->
+</head>
+<body>
+    <header> <!--Criei um header, as configurações de estilo estão na outra página-->
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section> <!--Criei uma section, as configurações de estilo estão na outra página-->
+        <div id="dados"> <!--um divisão-->
+            <p>Início: <input type="number" name="inicio" id="txti" min="1"></p>
+            <p>Fim:    <input type="number" name="fim" id="txtf" min="1"></p>
+            <p>Passo:  <input type="number" name="passo" id="txtp" min="1"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
+        </div>
+
+        <div id="res"><!--Outra divisão-->
+            Preparando a contagem...
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; RodrigoMonteiro</p> <!--copywhite-->
+    </footer>
+    <script src="script.js"></script> <!--Chamando o script src para outra página-->
+
+</body>
+</html>
